@@ -13,7 +13,7 @@ function Home({ navigation }) {
   const newSoundCallback = useCallback(() => dispatch(newSound()));
   const settingsCallback = useCallback(() => navigation.push('Settings'));
   return (
-    <React.Fragment>
+    <>
       <Appbar.Header>
         <Appbar.Content
           title="Soundboard"
@@ -26,7 +26,7 @@ function Home({ navigation }) {
       ) : (
         <Nothing />
       )}
-    </React.Fragment>
+    </>
   );
 }
 

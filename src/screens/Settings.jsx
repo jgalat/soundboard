@@ -5,7 +5,7 @@ import Nothing from '../components/Nothing';
 
 function Settings({ navigation }) {
   return (
-    <React.Fragment>
+    <>
       <Appbar.Header>
         <Appbar.BackAction onPress={() => navigation.goBack(null)} />
         <Appbar.Content
@@ -13,7 +13,7 @@ function Settings({ navigation }) {
         />
       </Appbar.Header>
       <Nothing />
-    </React.Fragment>
+    </>
   );
 }
 
